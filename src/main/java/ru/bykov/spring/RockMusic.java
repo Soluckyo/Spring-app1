@@ -2,11 +2,23 @@ package ru.bykov.spring;
 
 import org.springframework.stereotype.Component;
 
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
 import java.util.ArrayList;
 import java.util.List;
 
 @Component
 public class RockMusic implements Music{
+    @PostConstruct
+    public void doMyInit() {
+        System.out.println("Downloading music..");
+        wait(1000);
+        System.out.println("Setting up the equalizer..");
+    }
+    @PreDestroy
+    public void doMyDestroy(){
+        System.out.println("Turning off the music..");
+    }
     private List<String> rockSong = new ArrayList<>();
 
     // Блок инициализации объекта (англ. Instance initialization block)
@@ -20,5 +32,12 @@ public class RockMusic implements Music{
     @Override
     public List<String> getSong() {
         return rockSong;
+    }
+    public static void wait(int ms) {
+        try {
+            Thread.sleep(ms);
+        } catch (InterruptedException ex) {
+            Thread.currentThread().interrupt();
+        }
     }
 }
