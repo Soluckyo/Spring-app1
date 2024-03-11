@@ -11,13 +11,13 @@ import java.util.List;
 public class JazzMusic implements Music{
     @PostConstruct
     public void doMyInit() {
-        System.out.println("Downloading music..");
+        System.out.println("Downloading jazz music..");
         wait(1000);
         System.out.println("Setting up the equalizer..");
     }
     @PreDestroy
     public void doMyDestroy(){
-        System.out.println("Turning off the music..");
+        System.out.println("Turning off the jazz music..");
     }
     List<String> jazzSong = new ArrayList<>();
     {

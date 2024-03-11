@@ -10,8 +10,8 @@ public class TestSpring {
 
         Computer computer = context.getBean( "computer", Computer.class);
         System.out.println(computer);
-        System.out.println(computer.getVolume());
-        System.out.println(computer.getName());
+        System.out.println("Volume: " + computer.getVolume());
+        System.out.println("Device:  " + computer.getName());
         context.close();
     }
 }
