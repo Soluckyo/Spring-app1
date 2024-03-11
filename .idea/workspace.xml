@@ -5,10 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ca03c5ca-fad6-4ea8-a337-6af74c699717" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/ru/bykov/spring/SpringConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/bykov/spring/ClassicalMusic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/bykov/spring/genres/ClassicalMusic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/bykov/spring/Computer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/bykov/spring/Computer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/bykov/spring/JazzMusic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/bykov/spring/genres/JazzMusic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/bykov/spring/Music.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/bykov/spring/Music.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/bykov/spring/MusicPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/bykov/spring/MusicPlayer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/bykov/spring/RockMusic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/bykov/spring/genres/RockMusic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ru/bykov/spring/SpringConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/bykov/spring/config/SpringConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/bykov/spring/TestSpring.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/bykov/spring/TestSpring.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/musicPlayer.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/musicPlayer.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +98,7 @@
       <workItem from="1708533845988" duration="1380000" />
       <workItem from="1708535378985" duration="18446000" />
       <workItem from="1708973367743" duration="5301000" />
-      <workItem from="1710169191914" duration="1525000" />
+      <workItem from="1710169191914" duration="8509000" />
     </task>
     <servers />
   </component>
@@ -101,31 +107,5 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ru/bykov/spring/Computer.java</url>
-          <line>33</line>
-          <option name="timeStamp" value="17" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ru/bykov/spring/Computer.java</url>
-          <line>36</line>
-          <option name="timeStamp" value="18" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ru/bykov/spring/Computer.java</url>
-          <line>40</line>
-          <option name="timeStamp" value="19" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ru/bykov/spring/Computer.java</url>
-          <line>38</line>
-          <option name="timeStamp" value="21" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

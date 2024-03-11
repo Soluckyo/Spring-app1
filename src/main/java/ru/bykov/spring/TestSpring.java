@@ -1,7 +1,7 @@
 package ru.bykov.spring;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
+import ru.bykov.spring.config.SpringConfig;
 
 public class TestSpring {
     public static void main(String[] args) {
@@ -11,8 +11,8 @@ public class TestSpring {
 
         Computer computer = context.getBean( "computer", Computer.class);
         System.out.println(computer);
-        System.out.println("Volume: " + computer.getVolume());
-        System.out.println("Device:  " + computer.getName());
+//        System.out.println("Volume: " + computer.getVolume());
+//        System.out.println("Device:  " + computer.getDevice());
         context.close();
     }
 }

@@ -1,14 +1,12 @@
-package ru.bykov.spring;
+package ru.bykov.spring.genres;
 
-import org.springframework.stereotype.Component;
-
+import ru.bykov.spring.Music;
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 import java.util.ArrayList;
 import java.util.List;
 
-@Component
-public class JazzMusic implements Music{
+public class JazzMusic implements Music {
     @PostConstruct
     public void doMyInit() {
         System.out.println("Downloading jazz music..");
@@ -19,15 +17,10 @@ public class JazzMusic implements Music{
     public void doMyDestroy(){
         System.out.println("Turning off the jazz music..");
     }
-    List<String> jazzSong = new ArrayList<>();
-    {
-        jazzSong.add("Jazz:\"Feeling Good\"");
-        jazzSong.add("Jazz:\"What a wonderful world\"");
-        jazzSong.add("Jazz:\"Nevertheless\"");
-    }
+
     @Override
-    public List<String> getSong() {
-        return jazzSong;
+    public String getSong() {
+        return "What a wonderful world";
     }
     public static void wait(int ms) {
         try {
