@@ -7,6 +7,7 @@ import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 public class RockMusic implements Music {
     @PostConstruct
@@ -19,9 +20,24 @@ public class RockMusic implements Music {
     public void doMyDestroy(){
         System.out.println("Turning off the rock music..");
     }
+
+    private List<String> rockSongs = new ArrayList<>();
+
+    {
+        rockSongs.add("Rock:\"Wind cries Mary\"");
+        rockSongs.add("Rock:\"Paint it black\"");
+        rockSongs.add("Rock:\"Can't seem to make you mine\"");
+    }
+
+    public String randomRockSong(List<String> rockSongs){
+        int length = rockSongs.size();
+        int rnd = new Random().nextInt(length);
+        return rockSongs.get(rnd);
+    }
+
     @Override
     public String getSong() {
-        return "Wind cries Mary";
+        return randomRockSong(rockSongs);
     }
     public static void wait(int ms) {
         try {

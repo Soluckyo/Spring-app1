@@ -5,6 +5,7 @@ import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 public class JazzMusic implements Music {
     @PostConstruct
@@ -18,9 +19,22 @@ public class JazzMusic implements Music {
         System.out.println("Turning off the jazz music..");
     }
 
+    List<String> jazzSongs = new ArrayList<>();
+    {
+        jazzSongs.add("Jazz:\"Feeling Good\"");
+        jazzSongs.add("Jazz:\"What a wonderful world\"");
+        jazzSongs.add("Jazz:\"Nevertheless\"");
+    }
+
+    public String randomJazzSong(List<String> jazzSongs){
+        int length = jazzSongs.size();
+        int rnd = new Random().nextInt(length);
+        return jazzSongs.get(rnd);
+    }
+
     @Override
     public String getSong() {
-        return "What a wonderful world";
+        return randomJazzSong(jazzSongs);
     }
     public static void wait(int ms) {
         try {
